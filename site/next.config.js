@@ -35,6 +35,9 @@ module.exports = withCommerceConfig({
         },
     ].filter(Boolean)
   },
+  images: {
+    domains: ['static-01.daraz.pk', 'pk-live-21.slatic.net', 'video-play.daraz.pk', '*.daraz.pk', '*.alicdn.com']
+  }
 })
 
 // Don't delete this console log, useful to see the commerce config in Vercel deployments

@@ -1,7 +1,7 @@
 import random from 'lodash.random'
 
 export function getRandomPairOfColors() {
-  const colors = ['#37B679', '#DA3C3C', '#3291FF', '#7928CA', '#79FFE1']
+  const colors = ['#37B679', '#DA3C3C', '#3291FF', '#7928CA']
   const getRandomIdx = () => random(0, colors.length - 1)
   let idx = getRandomIdx()
   let idx2 = getRandomIdx()
@@ -53,7 +53,7 @@ export const colorMap: Record<string, string> = {
   black: '#000000',
   blanchedalmond: '#FFEBCD',
   blue: '#0000FF',
-  blueviolet: '#8A2BE2',
+  blueviolet: '#FFFFFF',///'#8A2BE2',
   brown: '#A52A2A',
   burlywood: '#DEB887',
   burgandy: '#800020',

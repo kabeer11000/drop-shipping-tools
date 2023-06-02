@@ -1,25 +1,25 @@
 {
-  "title": "ACME Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - ACME Storefront",
-  "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+  "title": "Rings and Co",
+  "titleTemplate": "%s - Rings and Co",
+  "description": "Rings and Co: Jewellery and more - Delivering all over 🇵🇰",
   "openGraph": {
-    "title": "ACME Storefront | Powered by Next.js Commerce",
-    "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+    "title": "Rings and Co",
+    "description": "Rings and Co: Jewellery and more - Delivering all over 🇵🇰",
     "type": "website",
-    "url": "https://nextjs.org/commerce",
-    "site_name": "Next.js Commerce",
+    "url": "https://ringsandco.vercel.app",
+    "site_name": "Rings and Co",
     "images": [
       {
         "url": "/card.png",
         "width": "800",
         "height": "600",
-        "alt": "Next.js Commerce"
+        "alt": "Rings and Co"
       }
     ]
   },
   "twitter": {
-    "handle": "@nextjs",
-    "site": "@nextjs",
+    "handle": "@rings_and_co_",
+    "site": "@rings_and_co_",
     "cardType": "summary_large_image"
   }
 }

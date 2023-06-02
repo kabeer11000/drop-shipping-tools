@@ -7,6 +7,7 @@ type Options = {
 export function emptyHook(options?: Options) {
   const useEmptyHook = async ({ id }: { id: string | number }) => {
     return useCallback(async function () {
+      // TODO
       return Promise.resolve()
     }, [])
   }

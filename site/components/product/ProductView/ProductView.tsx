@@ -17,7 +17,7 @@ interface ProductViewProps {
 
 const ProductView: FC<ProductViewProps> = ({ product, relatedProducts }) => {
   const { price } = usePrice({
-    amount: product.price.value,
+    amount: Math.floor(Math.round(product.price.value)),
     baseAmount: product.price.retailPrice,
     currencyCode: product.price.currencyCode!,
   })
@@ -68,7 +68,7 @@ const ProductView: FC<ProductViewProps> = ({ product, relatedProducts }) => {
         <section className="py-12 px-6 mb-10">
           <Text variant="sectionHeading">Related Products</Text>
           <div className={s.relatedProductsGrid}>
-            {relatedProducts.map((p) => (
+            {relatedProducts.slice(0, 4).map((p) => (
               <div
                 key={p.path}
                 className="animated fadeIn bg-accent-0 border border-accent-2"

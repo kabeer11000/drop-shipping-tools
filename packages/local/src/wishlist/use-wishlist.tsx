@@ -1,7 +1,7 @@
-import { HookFetcher } from '@vercel/commerce/utils/types'
-import type { Product } from '@vercel/commerce/types/product'
+import { HookFetcher } from "@vercel/commerce/utils/types";
+import type { Product } from "@vercel/commerce/types/product";
 
-const defaultOpts = {}
+const defaultOpts = {};
 
 export type Wishlist = {
   items: [
@@ -15,16 +15,16 @@ export type Wishlist = {
 }
 
 export interface UseWishlistOptions {
-  includeProducts?: boolean
+  includeProducts?: boolean;
 }
 
 export interface UseWishlistInput extends UseWishlistOptions {
-  customerId?: number
+  customerId?: number;
 }
 
 export const fetcher: HookFetcher<Wishlist | null, UseWishlistInput> = () => {
-  return null
-}
+  return null;       // TODO
+};
 
 export function extendHook(
   customFetcher: typeof fetcher,
@@ -32,12 +32,12 @@ export function extendHook(
   swrOptions?: any
 ) {
   const useWishlist = ({ includeProducts }: UseWishlistOptions = {}) => {
-    return { data: null }
-  }
+    return { data: null };
+  };
 
-  useWishlist.extend = extendHook
+  useWishlist.extend = extendHook;
 
-  return useWishlist
+  return useWishlist;
 }
 
-export default extendHook(fetcher)
+export default extendHook(fetcher);

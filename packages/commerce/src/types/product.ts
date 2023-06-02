@@ -1,16 +1,17 @@
 export type ProductImage = {
   url: string
-  alt?: string
+  alt?: string,
+  variant?: string, // Addition, SKU string
 }
 
 export type ProductPrice = {
   value: number
-  currencyCode?: 'USD' | 'EUR' | 'ARS' | string
+  currencyCode?: 'USD' | 'EUR' | 'ARS' | 'PKR' | string
   retailPrice?: number
   salePrice?: number
   listPrice?: number
   extendedSalePrice?: number
-  extendedListPrice?: number
+  extendedListPrice?: number,
 }
 
 export type ProductOption = {
@@ -22,7 +23,8 @@ export type ProductOption = {
 
 export type ProductOptionValues = {
   label: string
-  hexColors?: string[]
+  hexColors?: string[],
+  image?: string, // New Addition
 }
 
 export type ProductVariant = {

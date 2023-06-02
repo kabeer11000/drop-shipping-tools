@@ -46,8 +46,8 @@ export default function Home({
             key={product.id}
             product={product}
             imgProps={{
-              width: i === 0 ? 1080 : 540,
-              height: i === 0 ? 1080 : 540,
+              // width: i === 0 ? 1080 : 540,
+              // height: i === 0 ? 1080 : 540,
               priority: true,
             }}
           />
@@ -68,22 +68,22 @@ export default function Home({
             key={product.id}
             product={product}
             imgProps={{
-              width: i === 0 ? 1080 : 540,
-              height: i === 0 ? 1080 : 540,
+              // width: i === 0 ? 1080 : 540,
+              // height: i === 0 ? 1080 : 540,
             }}
           />
         ))}
       </Grid>
       <Marquee>
-        {products.slice(3).map((product: any, i: number) => (
+        {products.map((product: any, i: number) => (
           <ProductCard key={product.id} product={product} variant="slim" />
         ))}
       </Marquee>
-      {/* <HomeAllProductsGrid
-        newestProducts={products}
-        categories={categories}
-        brands={brands}
-      /> */}
+      {/*<HomeAllProductsGrid*/}
+      {/*  newestProducts={products}*/}
+      {/*  categories={categories}*/}
+      {/*  brands={brands}*/}
+      {/*/>*/}
     </>
   )
 }

@@ -42,7 +42,7 @@ const Text: FunctionComponent<TextProps> = ({
 
   const htmlContentProps = html
     ? {
-        dangerouslySetInnerHTML: { __html: html },
+        dangerouslySetInnerHTML: { __html: html.replace(/<img[^>"']*((("[^"]*")|('[^']*'))[^"'>]*)*>/g,"").trim().replace(/<div[^>"']*((("[^"]*")|('[^']*'))[^"'>]*)*>/g,"").trim() }, // Fixed, Image remover regex
       }
     : {}
 
